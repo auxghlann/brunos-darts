@@ -1,5 +1,5 @@
 import { useState, useMemo, useEffect, useCallback } from 'react';
-import { DartsGame, Player } from './game';
+import { DartsGame, type Player } from './game';
 import Dartboard from './components/Dartboard';
 import SettingsModal from './components/SettingsModal';
 import Header from './components/Header';
