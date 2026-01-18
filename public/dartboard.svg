@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-200 -200 400 400" id="dartboard-illustration">
+  <style>
+    .segment {
+      transition: fill 0.15s ease-in-out;
+      stroke: #ccc;
+      stroke-width: 0.2;
+      cursor: pointer;
+    }
+    .segment:hover {
+      opacity: 0.8;
+    }
+    .segment.lit {
+      fill: #ffc107 !important;
+      stroke: #ffc107;
+      stroke-width: 0.5;
+      filter: drop-shadow(0 0 5px #ffc107);
+    }
+    .bg { fill: #333; }
+    .black { fill: #000; }
+    .white { fill: #f7f7f7; }
+    .red { fill: #d92128; }
+    .green { fill: #008b47; }
+  </style>
+  <circle cx="0" cy="0" r="180" class="bg" />
+  <g id="dartboard-segments">
+    <path id="s-20" class="segment black" d="M 0 0 L -28.1 -166.4 A 170 170 0 0 1 28.1 -166.4 L 0 0 M -17.5 -103.5 A 107 107 0 0 0 17.5 -103.5 L 0 0" transform="rotate(9)"/>
+    <path id="d-20" class="segment green" d="M -28.1 -166.4 A 170 170 0 0 1 28.1 -166.4 L 26.5 -156.3 A 160 160 0 0 0 -26.5 -156.3 Z" transform="rotate(9)"/>
+    <path id="t-20" class="segment red" d="M -17.5 -103.5 A 107 107 0 0 1 17.5 -103.5 L 16.0 -95.8 A 98 98 0 0 0 -16.0 -95.8 Z" transform="rotate(9)"/>
+    <path id="s-1" class="segment white" d="M 0 0 L -28.1 -166.4 A 170 170 0 0 1 28.1 -166.4 L 0 0 M -17.5 -103.5 A 107 107 0 0 0 17.5 -103.5 L 0 0" transform="rotate(27)"/>
+    <path id="d-1" class="segment red" d="M -28.1 -166.4 A 170 170 0 0 1 28.1 -166.4 L 26.5 -156.3 A 160 160 0 0 0 -26.5 -156.3 Z" transform="rotate(27)"/>
+    <path id="t-1" class="segment green" d="M -17.5 -103.5 A 107 107 0 0 1 17.5 -103.5 L 16.0 -95.8 A 98 98 0 0 0 -16.0 -95.8 Z" transform="rotate(27)"/>
+    <path id="s-18" class="segment black" d="M 0 0 L -28.1 -166.4 A 170 170 0 0 1 28.1 -166.4 L 0 0 M -17.5 -103.5 A 107 107 0 0 0 17.5 -103.5 L 0 0" transform="rotate(45)"/>
+    <path id="d-18" class="segment green" d="M -28.1 -166.4 A 170 170 0 0 1 28.1 -166.4 L 26.5 -156.3 A 160 160 0 0 0 -26.5 -156.3 Z" transform="rotate(45)"/>
+    <path id="t-18" class="segment red" d="M -17.5 -103.5 A 107 107 0 0 1 17.5 -103.5 L 16.0 -95.8 A 98 98 0 0 0 -16.0 -95.8 Z" transform="rotate(45)"/>
+    <path id="s-4" class="segment white" d="M 0 0 L -28.1 -166.4 A 170 170 0 0 1 28.1 -166.4 L 0 0 M -17.5 -103.5 A 107 107 0 0 0 17.5 -103.5 L 0 0" transform="rotate(63)"/>
+    <path id="d-4" class="segment red" d="M -28.1 -166.4 A 170 170 0 0 1 28.1 -166.4 L 26.5 -156.3 A 160 160 0 0 0 -26.5 -156.3 Z" transform="rotate(63)"/>
+    <path id="t-4" class="segment green" d="M -17.5 -103.5 A 107 107 0 0 1 17.5 -103.5 L 16.0 -95.8 A 98 98 0 0 0 -16.0 -95.8 Z" transform="rotate(63)"/>
+    <path id="s-13" class="segment black" d="M 0 0 L -28.1 -166.4 A 170 170 0 0 1 28.1 -166.4 L 0 0 M -17.5 -103.5 A 107 107 0 0 0 17.5 -103.5 L 0 0" transform="rotate(81)"/>
+    <path id="d-13" class="segment green" d="M -28.1 -166.4 A 170 170 0 0 1 28.1 -166.4 L 26.5 -156.3 A 160 160 0 0 0 -26.5 -156.3 Z" transform="rotate(81)"/>
+    <path id="t-13" class="segment red" d="M -17.5 -103.5 A 107 107 0 0 1 17.5 -103.5 L 16.0 -95.8 A 98 98 0 0 0 -16.0 -95.8 Z" transform="rotate(81)"/>
+    <path id="s-6" class="segment white" d="M 0 0 L -28.1 -166.4 A 170 170 0 0 1 28.1 -166.4 L 0 0 M -17.5 -103.5 A 107 107 0 0 0 17.5 -103.5 L 0 0" transform="rotate(99)"/>
+    <path id="d-6" class="segment red" d="M -28.1 -166.4 A 170 170 0 0 1 28.1 -166.4 L 26.5 -156.3 A 160 160 0 0 0 -26.5 -156.3 Z" transform="rotate(99)"/>
+    <path id="t-6" class="segment green" d="M -17.5 -103.5 A 107 107 0 0 1 17.5 -103.5 L 16.0 -95.8 A 98 98 0 0 0 -16.0 -95.8 Z" transform="rotate(99)"/>
+    <path id="s-10" class="segment black" d="M 0 0 L -28.1 -166.4 A 170 170 0 0 1 28.1 -166.4 L 0 0 M -17.5 -103.5 A 107 107 0 0 0 17.5 -103.5 L 0 0" transform="rotate(117)"/>
+    <path id="d-10" class="segment green" d="M -28.1 -166.4 A 170 170 0 0 1 28.1 -166.4 L 26.5 -156.3 A 160 160 0 0 0 -26.5 -156.3 Z" transform="rotate(117)"/>
+    <path id="t-10" class="segment red" d="M -17.5 -103.5 A 107 107 0 0 1 17.5 -103.5 L 16.0 -95.8 A 98 98 0 0 0 -16.0 -95.8 Z" transform="rotate(117)"/>
+    <path id="s-15" class="segment white" d="M 0 0 L -28.1 -166.4 A 170 170 0 0 1 28.1 -166.4 L 0 0 M -17.5 -103.5 A 107 107 0 0 0 17.5 -103.5 L 0 0" transform="rotate(135)"/>
+    <path id="d-15" class="segment red" d="M -28.1 -166.4 A 170 170 0 0 1 28.1 -166.4 L 26.5 -156.3 A 160 160 0 0 0 -26.5 -156.3 Z" transform="rotate(135)"/>
+    <path id="t-15" class="segment green" d="M -17.5 -103.5 A 107 107 0 0 1 17.5 -103.5 L 16.0 -95.8 A 98 98 0 0 0 -16.0 -95.8 Z" transform="rotate(135)"/>
+    <path id="s-2" class="segment black" d="M 0 0 L -28.1 -166.4 A 170 170 0 0 1 28.1 -166.4 L 0 0 M -17.5 -103.5 A 107 107 0 0 0 17.5 -103.5 L 0 0" transform="rotate(153)"/>
+    <path id="d-2" class="segment green" d="M -28.1 -166.4 A 170 170 0 0 1 28.1 -166.4 L 26.5 -156.3 A 160 160 0 0 0 -26.5 -156.3 Z" transform="rotate(153)"/>
+    <path id="t-2" class="segment red" d="M -17.5 -103.5 A 107 107 0 0 1 17.5 -103.5 L 16.0 -95.8 A 98 98 0 0 0 -16.0 -95.8 Z" transform="rotate(153)"/>
+    <path id="s-17" class="segment white" d="M 0 0 L -28.1 -166.4 A 170 170 0 0 1 28.1 -166.4 L 0 0 M -17.5 -103.5 A 107 107 0 0 0 17.5 -103.5 L 0 0" transform="rotate(171)"/>
+    <path id="d-17" class="segment red" d="M -28.1 -166.4 A 170 170 0 0 1 28.1 -166.4 L 26.5 -156.3 A 160 160 0 0 0 -26.5 -156.3 Z" transform="rotate(171)"/>
+    <path id="t-17" class="segment green" d="M -17.5 -103.5 A 107 107 0 0 1 17.5 -103.5 L 16.0 -95.8 A 98 98 0 0 0 -16.0 -95.8 Z" transform="rotate(171)"/>
+    <path id="s-3" class="segment black" d="M 0 0 L -28.1 -166.4 A 170 170 0 0 1 28.1 -166.4 L 0 0 M -17.5 -103.5 A 107 107 0 0 0 17.5 -103.5 L 0 0" transform="rotate(189)"/>
+    <path id="d-3" class="segment green" d="M -28.1 -166.4 A 170 170 0 0 1 28.1 -166.4 L 26.5 -156.3 A 160 160 0 0 0 -26.5 -156.3 Z" transform="rotate(189)"/>
+    <path id="t-3" class="segment red" d="M -17.5 -103.5 A 107 107 0 0 1 17.5 -103.5 L 16.0 -95.8 A 98 98 0 0 0 -16.0 -95.8 Z" transform="rotate(189)"/>
+    <path id="s-19" class="segment white" d="M 0 0 L -28.1 -166.4 A 170 170 0 0 1 28.1 -166.4 L 0 0 M -17.5 -103.5 A 107 107 0 0 0 17.5 -103.5 L 0 0" transform="rotate(207)"/>
+    <path id="d-19" class="segment red" d="M -28.1 -166.4 A 170 170 0 0 1 28.1 -166.4 L 26.5 -156.3 A 160 160 0 0 0 -26.5 -156.3 Z" transform="rotate(207)"/>
+    <path id="t-19" class="segment green" d="M -17.5 -103.5 A 107 107 0 0 1 17.5 -103.5 L 16.0 -95.8 A 98 98 0 0 0 -16.0 -95.8 Z" transform="rotate(207)"/>
+    <path id="s-7" class="segment black" d="M 0 0 L -28.1 -166.4 A 170 170 0 0 1 28.1 -166.4 L 0 0 M -17.5 -103.5 A 107 107 0 0 0 17.5 -103.5 L 0 0" transform="rotate(225)"/>
+    <path id="d-7" class="segment green" d="M -28.1 -166.4 A 170 170 0 0 1 28.1 -166.4 L 26.5 -156.3 A 160 160 0 0 0 -26.5 -156.3 Z" transform="rotate(225)"/>
+    <path id="t-7" class="segment red" d="M -17.5 -103.5 A 107 107 0 0 1 17.5 -103.5 L 16.0 -95.8 A 98 98 0 0 0 -16.0 -95.8 Z" transform="rotate(225)"/>
+    <path id="s-16" class="segment white" d="M 0 0 L -28.1 -166.4 A 170 170 0 0 1 28.1 -166.4 L 0 0 M -17.5 -103.5 A 107 107 0 0 0 17.5 -103.5 L 0 0" transform="rotate(243)"/>
+    <path id="d-16" class="segment red" d="M -28.1 -166.4 A 170 170 0 0 1 28.1 -166.4 L 26.5 -156.3 A 160 160 0 0 0 -26.5 -156.3 Z" transform="rotate(243)"/>
+    <path id="t-16" class="segment green" d="M -17.5 -103.5 A 107 107 0 0 1 17.5 -103.5 L 16.0 -95.8 A 98 98 0 0 0 -16.0 -95.8 Z" transform="rotate(243)"/>
+    <path id="s-8" class="segment black" d="M 0 0 L -28.1 -166.4 A 170 170 0 0 1 28.1 -166.4 L 0 0 M -17.5 -103.5 A 107 107 0 0 0 17.5 -103.5 L 0 0" transform="rotate(261)"/>
+    <path id="d-8" class="segment green" d="M -28.1 -166.4 A 170 170 0 0 1 28.1 -166.4 L 26.5 -156.3 A 160 160 0 0 0 -26.5 -156.3 Z" transform="rotate(261)"/>
+    <path id="t-8" class="segment red" d="M -17.5 -103.5 A 107 107 0 0 1 17.5 -103.5 L 16.0 -95.8 A 98 98 0 0 0 -16.0 -95.8 Z" transform="rotate(261)"/>
+    <path id="s-11" class="segment white" d="M 0 0 L -28.1 -166.4 A 170 170 0 0 1 28.1 -166.4 L 0 0 M -17.5 -103.5 A 107 107 0 0 0 17.5 -103.5 L 0 0" transform="rotate(279)"/>
+    <path id="d-11" class="segment red" d="M -28.1 -166.4 A 170 170 0 0 1 28.1 -166.4 L 26.5 -156.3 A 160 160 0 0 0 -26.5 -156.3 Z" transform="rotate(279)"/>
+    <path id="t-11" class="segment green" d="M -17.5 -103.5 A 107 107 0 0 1 17.5 -103.5 L 16.0 -95.8 A 98 98 0 0 0 -16.0 -95.8 Z" transform="rotate(279)"/>
+    <path id="s-14" class="segment black" d="M 0 0 L -28.1 -166.4 A 170 170 0 0 1 28.1 -166.4 L 0 0 M -17.5 -103.5 A 107 107 0 0 0 17.5 -103.5 L 0 0" transform="rotate(297)"/>
+    <path id="d-14" class="segment green" d="M -28.1 -166.4 A 170 170 0 0 1 28.1 -166.4 L 26.5 -156.3 A 160 160 0 0 0 -26.5 -156.3 Z" transform="rotate(297)"/>
+    <path id="t-14" class="segment red" d="M -17.5 -103.5 A 107 107 0 0 1 17.5 -103.5 L 16.0 -95.8 A 98 98 0 0 0 -16.0 -95.8 Z" transform="rotate(297)"/>
+    <path id="s-9" class="segment white" d="M 0 0 L -28.1 -166.4 A 170 170 0 0 1 28.1 -166.4 L 0 0 M -17.5 -103.5 A 107 107 0 0 0 17.5 -103.5 L 0 0" transform="rotate(315)"/>
+    <path id="d-9" class="segment red" d="M -28.1 -166.4 A 170 170 0 0 1 28.1 -166.4 L 26.5 -156.3 A 160 160 0 0 0 -26.5 -156.3 Z" transform="rotate(315)"/>
+    <path id="t-9" class="segment green" d="M -17.5 -103.5 A 107 107 0 0 1 17.5 -103.5 L 16.0 -95.8 A 98 98 0 0 0 -16.0 -95.8 Z" transform="rotate(315)"/>
+    <path id="s-12" class="segment black" d="M 0 0 L -28.1 -166.4 A 170 170 0 0 1 28.1 -166.4 L 0 0 M -17.5 -103.5 A 107 107 0 0 0 17.5 -103.5 L 0 0" transform="rotate(333)"/>
+    <path id="d-12" class="segment green" d="M -28.1 -166.4 A 170 170 0 0 1 28.1 -166.4 L 26.5 -156.3 A 160 160 0 0 0 -26.5 -156.3 Z" transform="rotate(333)"/>
+    <path id="t-12" class="segment red" d="M -17.5 -103.5 A 107 107 0 0 1 17.5 -103.5 L 16.0 -95.8 A 98 98 0 0 0 -16.0 -95.8 Z" transform="rotate(333)"/>
+    <path id="s-5" class="segment white" d="M 0 0 L -28.1 -166.4 A 170 170 0 0 1 28.1 -166.4 L 0 0 M -17.5 -103.5 A 107 107 0 0 0 17.5 -103.5 L 0 0" transform="rotate(351)"/>
+    <path id="d-5" class="segment red" d="M -28.1 -166.4 A 170 170 0 0 1 28.1 -166.4 L 26.5 -156.3 A 160 160 0 0 0 -26.5 -156.3 Z" transform="rotate(351)"/>
+    <path id="t-5" class="segment green" d="M -17.5 -103.5 A 107 107 0 0 1 17.5 -103.5 L 16.0 -95.8 A 98 98 0 0 0 -16.0 -95.8 Z" transform="rotate(351)"/>
+  </g>
+  <circle id="outer-bull" class="segment red" cx="0" cy="0" r="15.9" />
+  <circle id="bull" class="segment green" cx="0" cy="0" r="6.35" />
+</svg>
